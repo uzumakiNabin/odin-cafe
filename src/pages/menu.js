@@ -1,3 +1,4 @@
+//generate menu items from given item name, its description and prize
 const menuItemGenerator = (name, desc, prize) => {
     let component = document.createElement('div');
     component.classList.add('menu-item');
@@ -21,6 +22,7 @@ const menuItemGenerator = (name, desc, prize) => {
     return component;
 }
 
+//menu items grouped under espresso
 const espresso = () => {
     let component = document.createElement('div');
     component.classList.add('menu-group');
@@ -46,6 +48,7 @@ const espresso = () => {
     return component;
 }
 
+//menu items grouped under chocolate
 const chocolate = () => {
     let component = document.createElement('div');
     component.classList.add('menu-group');
@@ -67,6 +70,8 @@ const chocolate = () => {
     return component;
 }
 
+
+//menu items grouped under smoothies
 const smoothies = () => {
     let component = document.createElement('div');
     component.classList.add('menu-group');
@@ -84,6 +89,8 @@ const smoothies = () => {
     return component;
 }
 
+
+//breakfast
 const breakfast = () => {
     let component = document.createElement('div');
     component.classList.add('menu-group');
@@ -102,6 +109,7 @@ const breakfast = () => {
     return component;
 }
 
+//menu page
 const menu = () => {
     let component = document.createElement('div');
     component.classList.add('menu-container');

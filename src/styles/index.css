@@ -1,0 +1,16 @@
+.visible{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+
+.selected{
+    border: 1px solid #0f0;
+}
+
+.unselected{
+    border: 0px;
+}

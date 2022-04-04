@@ -2,6 +2,27 @@ import home from './pages/home';
 import menu from './pages/menu';
 import contact from './pages/contact';
 import logo from './images/logo.jpg';
+import './styles/index.css';
+
+//function to show/hide elements
+const show = component => {
+    component.classList.remove('hidden');
+    component.classList.add('visible');
+}
+
+const hide = component => {
+    component.classList.remove('visible');
+    component.classList.add('hidden');
+}
+
+//function to select/unselect nav links
+const select = component => {
+    component.classList.add('selected');
+}
+
+const unselect = component => {
+    component.classList.remove('selected');
+}
 
 //logo with name
 const logoWithName = () => {
@@ -24,24 +45,45 @@ const navLinks = () => {
 
     //home option
     let homeLink = document.createElement('a');
-    homeLink.classList.add('nav-link');
+    homeLink.classList.add('nav-link', 'selected');
     homeLink.href = '#';
     homeLink.textContent = 'Home';
-    homeLink.addEventListener('click', () => alert('home clicked'));
+    homeLink.addEventListener('click', () => {
+        select(homeLink);
+        unselect(menuLink);
+        unselect(contactLink);
+        show(home);
+        hide(menu);
+        hide(contact);
+    });
 
     //menu option
     let menuLink = document.createElement('a');
     menuLink.classList.add('nav-link');
     menuLink.href = '#';
     menuLink.textContent = 'Menu';
-    menuLink.addEventListener('click', () => alert('menu clicked'));
+    menuLink.addEventListener('click', () => {
+        select(menuLink);
+        unselect(contactLink);
+        unselect(homeLink);
+        show(menu);
+        hide(contact);
+        hide(home);
+    });
 
     //contact option
     let contactLink = document.createElement('a');
     contactLink.classList.add('nav-link');
     contactLink.href = '#';
     contactLink.textContent = 'Contact';
-    contactLink.addEventListener('click', () => alert('contact clicked'));
+    contactLink.addEventListener('click', () => {
+        select(contactLink);
+        unselect(homeLink);
+        unselect(menuLink);
+        show(contact);
+        hide(home);
+        hide(menu);
+    });
 
     component.appendChild(homeLink);
     component.appendChild(menuLink);
@@ -106,8 +148,11 @@ const container = () => {
     component.classList.add('container');
     component.appendChild(navBar());
 
+    show(home);
     component.appendChild(home);
+    hide(menu);
     component.appendChild(menu);
+    hide(contact);
     component.appendChild(contact);
 
     component.appendChild(footer());

@@ -73,6 +73,7 @@ const cafeImage = () => {
     return component;
 }
 
+//final contact page
 const contact = () => {
     const component = document.createElement('div');
     component.classList.add('contact-container');

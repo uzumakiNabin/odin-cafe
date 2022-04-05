@@ -1,3 +1,5 @@
+import '../styles/home.css'
+
 const home = () => {
     let component = document.createElement('div');
     component.classList.add('home-container');

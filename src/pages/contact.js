@@ -1,4 +1,5 @@
 import cafeimg from '../images/cafeImage.jpg';
+import '../styles/contact.css';
 
 //location information
 const locationInfo = () => {
@@ -11,7 +12,7 @@ const locationInfo = () => {
 
     let address = document.createElement('p');
     address.classList.add('contact-details');
-    address.textContent = '110117th St NW Washington, DC 20036';
+    address.textContent = '12345th St NW Washington, DC 12345';
 
     let phone = document.createElement('p');
     phone.classList.add('contact-details', 'contact-link');
@@ -40,7 +41,7 @@ const hoursOpen = () => {
 
     let content = document.createElement('p');
     content.classList.add('contact-details');
-    content.textContent = 'Monday - Friday: 7am - 3pm \n Saturday - Sunday: Closed';
+    content.innerHTML = 'Monday - Friday: 7am - 3pm <br> Saturday - Sunday: Closed';
 
     component.appendChild(title);
     component.appendChild(content);

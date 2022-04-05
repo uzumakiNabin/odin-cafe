@@ -27,6 +27,8 @@ const unselect = component => {
 //logo with name
 const logoWithName = () => {
     let component = document.createElement('div');
+    component.classList.add('logo-with-name');
+
     let logoImg = document.createElement('img');
     logoImg.src = logo;
     logoImg.classList.add('img', 'main-logo-image');

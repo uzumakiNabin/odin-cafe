@@ -1,0 +1,45 @@
+.contact-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 40px;
+}
+
+.location-info{
+    margin-bottom: 30px;
+}
+
+.contact-header{
+    color: #9c6644;
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+
+.contact-details{
+    color: #b08968;
+    font-size: 1.3rem;
+    margin: 10px 0px;
+}
+
+.contact-link{
+    color: #1a759f;
+    cursor: pointer;
+}
+
+.contact-button{
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    color: #9c6644;
+    border: 1px solid #9c6644;
+    margin-top: 30px;
+    background-color: #ede0d4;
+    cursor: pointer;
+}
+
+.cafe-image{
+    border-radius: 50%;
+    width: 400px;
+    height: auto;
+}

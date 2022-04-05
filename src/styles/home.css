@@ -1,0 +1,28 @@
+/* cookie-regular*/
+@font-face {
+    font-family: 'Cookie';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Cookie-Regular.ttf') format('truetype');
+  }
+
+.home-container{
+    background-image: url('../images/background.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote{
+    padding: 2px 8px;
+    font-family: 'Cookie';
+    font-size: 5rem;
+    color: #ddb892;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+}
+

@@ -1,17 +1,17 @@
 import home from './pages/home';
 import menu from './pages/menu';
 import contact from './pages/contact';
-import logo from './images/logo.jpg';
+import logo from './images/logo.png';
 import './styles/index.css';
+import '@fortawesome/fontawesome-free/js/brands';
+import '@fortawesome/fontawesome-free/js/solid';
 
 //function to show/hide elements
 const show = component => {
     component.classList.remove('hidden');
-    component.classList.add('visible');
 }
 
 const hide = component => {
-    component.classList.remove('visible');
     component.classList.add('hidden');
 }
 
@@ -107,7 +107,7 @@ const generateSocial = (name, link) => {
     let component = document.createElement('a');
     component.href = link;
     let componentLogo = document.createElement('i');
-    componentLogo.classList.add('fa-solid', `fa-${name}`);
+    componentLogo.classList.add('fa-brands', `fa-${name}`);
     component.appendChild(componentLogo);
     return component;
 }
@@ -120,6 +120,9 @@ const socialLinks = () => {
     component.appendChild(generateSocial('instagram', '#'));
     component.appendChild(generateSocial('twitter', '#'));
     component.appendChild(generateSocial('youtube', '#'));
+    let g = document.createElement('i');
+    g.classList.add('fa-solid', 'fa-shield');
+    component.appendChild(g);
     return component;
 }
 

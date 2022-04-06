@@ -13,8 +13,11 @@
     background-position: center;
     background-size: cover;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 110px;
     align-items: center;
+    padding-bottom: 10%;
 }
 
 .quote{
@@ -26,3 +29,17 @@
     border-radius: 10px; 
 }
 
+.order-button{
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 1px solid #7f5539;
+    color: #7f5539;
+    background-color: rgba(237, 224, 212, 0.3);
+    cursor: pointer;
+}
+
+.order-button:hover{
+    color: #ddb892;
+    background-color: #7f5539;
+}

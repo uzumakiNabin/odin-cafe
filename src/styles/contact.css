@@ -38,6 +38,11 @@
     cursor: pointer;
 }
 
+.contact-button:hover{
+    color: #ede0d4;
+    background-color: #9c6644;
+}
+
 .cafe-image{
     border-radius: 50%;
     width: 400px;

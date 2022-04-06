@@ -1,3 +1,5 @@
+import '../styles/menu.css';
+
 //generate menu items from given item name, its description and prize
 const menuItemGenerator = (name, desc, prize) => {
     let component = document.createElement('div');
@@ -37,7 +39,7 @@ const espresso = () => {
     component.appendChild(menuItemGenerator('Cortado', 'Espresso with foamed milk', 492.90));
     component.appendChild(menuItemGenerator('Macchiato', 'Espresso marked with foam', 462.70));
     component.appendChild(menuItemGenerator('Americano', 'Espresso and hot water', 407.13));
-    component.appendChild(menuItemGenerator('Cold Brew', 'Cold brewed offee steeped over 18 hours', 399.88));
+    component.appendChild(menuItemGenerator('Cold Brew', 'Cold brewed coffee steeped over 18 hours', 399.88));
     component.appendChild(menuItemGenerator('Cafe Au Lait', 'Special blend with steamed milk', 369.68));
     component.appendChild(menuItemGenerator('Latte', 'Espresso with steamed milk', 524.32));
     component.appendChild(menuItemGenerator('Maple Leaf Latte', 'Espresso, house made maple syrup and steamed milk', 584.72));

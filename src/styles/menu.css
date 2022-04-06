@@ -1,0 +1,64 @@
+/* merriweather */
+@font-face {
+    font-family: 'merriweather';
+    font-weight: 300;
+    src: url('../fonts/merriweather-300.ttf');
+}
+
+@font-face {
+    font-family: 'merriweather';
+    font-weight: 400;
+    src: url('../fonts/merriweather-regular.ttf');
+}
+
+@font-face {
+    font-family: 'merriweather';
+    font-weight: 700;
+    src: url('../fonts/merriweather-700.ttf');
+}
+
+.menu-container{
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'merriweather', 'Roboto', serif;
+}
+
+.menu-group{
+    text-align: center;
+    border-right: 1px solid #7f5539;
+}
+
+.menu-group:last-child{
+    border: 0px;
+}
+
+.menu-group-header{
+    font-weight: 700;
+    color: #7f5539;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 12px 0px;
+}
+
+.menu-item{
+    margin: 16px 0px;
+    color: #b08968;
+}
+
+.menu-name{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 4px 0px;
+}
+
+.menu-desc{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 2px 0px;
+}
+
+.menu-prize{
+    font-size: 0.9rem;
+    font-weight: 300;
+}

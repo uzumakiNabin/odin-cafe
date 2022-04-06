@@ -1,4 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+/* courgette-regular */
+@font-face {
+    font-family: 'Courgette';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Courgette-Regular.ttf');
+}
+
+/* merriweather - regular */
+@font-face {
+    font-family: 'merriweather';
+    font-weight: 400;
+    src: url('../fonts/merriweather-regular.ttf');
+}
+
+/* merriweather - bold */
+@font-face {
+    font-family: 'merriweather';
+    font-weight: 700;
+    src: url('../fonts/merriweather-700.ttf');
+}
 
 * {
     box-sizing: border-box;
@@ -10,14 +30,14 @@
 }
 
 .container{
-    width: 100%;
-    height: 100%;
     background-color: #ede0d4;
 }
 
 .navbar{
-    background-color: #ddb892;
+    background-color: rgba(221, 184, 146, 0.7);
     color: #9c6644;
+    border-radius: 15px;
+    box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.3);
     position: absolute;
     left: 2%;
     top: 8px;
@@ -30,7 +50,7 @@
 }
 
 .logo-with-name{
-    margin: 20px 8px 0px;
+    margin-left: 25px;
     display: flex;
     justify-content: flex-start;
     gap: 8px;
@@ -41,39 +61,56 @@
     height: auto;
 }
 
-.main-log-name{
-    font-family: 'Courgette', 'Robot', serif;
+.main-logo-name{
+    font-family: 'Courgette', 'Roboto', serif;
     font-size: 5rem;
+    margin: 0px;
 }
 
 .nav-links{
+    margin-right: 25px;
     display: flex;
     justify-content: flex-end;
     gap: 20px;
 }
 
 .nav-link{
+    font-family: 'merriweather', serif;
+    font-weight: 700;
     font-size: 3.5em;
     text-decoration: none;
     color: #7f5539;
-    font-weight: 700;
     padding: 9px;
     cursor: pointer;
 }
 
-.visible{
+.footer{
+    width: 100%;
+    background-color: #7f5539;
+    color: #ede0d4;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links{
+    margin: 20px 0px;
+}
+
+.footer-text{
+    font-family: 'merriweather', serif;
+    font-size: 1rem;
+    margin: 20px 0px;
+}
+
+.connect-text{
+    text-transform: uppercase;
 }
 
 .hidden{
     display: none;
 }
 
-
 .selected{
-    border: 1px solid #0f0;
-}
-
-.unselected{
-    border: 0px;
+    border-bottom: 2px solid #7f5539;
 }
